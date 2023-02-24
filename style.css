@@ -1,0 +1,245 @@
+/* Importação de fonte via Google Fonts --------- */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+/* Reset básico --------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body --------- */
+body {
+    background-color: #33475B;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* Header --------- */
+header {
+    height: 80px;
+    background-color: #FFFFFF;
+    display: flex;
+}
+
+.container-elementos-header {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.titulo-principal {
+    font-size: 24px;
+    color: #0000EE;
+    font-weight: 400;
+}
+
+.label-pesquisa {
+    background-color: #DB1E8C;
+    height: 40px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border-radius: 4px;
+}
+
+.input-pesquisa {
+    background-color: transparent;
+    padding: 4px;
+    border: none;
+}
+
+::placeholder {
+    color: #FF97D3;
+}
+
+
+/*TRILHAS ---------*/
+
+.container-elementos-trilhas {
+    display: flex;
+    margin: 0 3em;
+}
+
+.conteudo-trilhas {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 37px auto 105px;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.conteudo-trilhas-box {
+    list-style-type: none;
+    width: 400px;
+    height: 444.74px;
+    
+
+    background: #F5F5F5;
+    border-radius: 4px;
+
+    margin-bottom: 37px ;
+
+    padding: 32px;
+    display: flex;
+    position: relative;
+
+}
+
+.titulo-trilhas {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 31px;
+
+    color: #364372;
+
+    margin-bottom: 24px;
+
+}
+
+.texto-trilhas {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+
+    color: #000000;
+
+}
+
+.botao-trilhas {
+
+
+    box-sizing: border-box;
+    padding: 14.74px 18.38px;
+    position: absolute;
+    bottom: 32px;
+    min-width: 138px;
+
+    border: 1px solid #264FEC;
+    border-radius: 4px;
+
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+
+   
+    color: #264FEC;
+    transition: 0.5s;
+}
+
+.botao-trilhas:hover {
+    background-color: #264FEC;
+    color: white;
+}
+
+/*Footer ---------*/
+
+.footer {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background: #FFFFFF;
+    padding: 1em;
+
+}
+.container-footer {
+    display: flex;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.imagem-logo-esquerda {
+    margin-right: 1em;
+}
+
+.conteudo-footer-direita {
+    display: flex;
+    align-items: center;
+
+}
+
+.conteudo-footer-direita-links {
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    
+}
+
+.footer-texto-links {
+    text-decoration: none;
+    margin-bottom: 0.7em;
+    color: #000000;
+}
+
+.conteudo-footer-direita-icones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2em;
+}
+
+@media screen and (max-width: 600px) {
+    .titulo-principal {
+        font-size: 18px;
+    }
+
+    .label-pesquisa {
+        background-color: white;
+        
+    }
+
+    .input-pesquisa {
+        display: none;
+    }
+
+    .input-pesquisa:hover {
+        display: flex;
+        background-color: #DB1E8C;
+    }
+
+    .container-footer {
+        flex-direction: column;
+    }
+
+    .conteudo-footer {
+        margin: 2em auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+    .container-elementos-header {
+        width: 100%;
+        margin: 0 1em; 
+    }
+}
+
+@media screen and (max-width: 411px) {
+    .conteudo-trilhas-box {
+        width: auto;
+        height: fit-content;
+    }
+
+    .texto-trilhas {
+        margin-bottom: 5em;
+    }
+
+    
+}
